@@ -1,0 +1,554 @@
+body {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #E9E9E9;
+
+    /* esto es para habilitar la sandbox */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+#universe {
+    width: 100vw;
+    /* width: 100%; */
+    height: 100vh;
+    /* height: 100%; */
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#workArea {
+    height: 88%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+/* ----------------------------------------------------- */
+.elementos {
+    background-color: silver;
+    display: block;
+    /* height: 10vh; */
+    height: 12%;
+    /* width: 100vw; */
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.btn{
+    font-size: 0.75em;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    /* border: none; */
+    /* background-color: black; */
+    /* color: white; */
+}
+.etiquetaGeneral{
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
+}
+
+.panelElementos{
+    width: 30%;
+    height: 80%;
+    overflow: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(175, 175, 175);
+    display: inline-block;
+}
+
+
+#panelInformacion{
+    font-size: 0.8em;
+    height: 20%;
+    margin: 0px 0px;
+    padding: 0px;
+
+}
+
+
+
+
+#tituloBarraElementos {
+    margin: 0px;
+}
+
+#elemento_seleccionado {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#soltar_en {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#sepadaro_info {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+/* ----------------------------------------------------- */
+#panelPropiedades {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 18%;
+
+    /* height: 90vh; */
+    padding-top: 2px;
+    height: 98%;
+}
+
+.propiedadesCss {
+    background-color: silver;
+    /* width: auto; */
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+}
+
+.propiedadesHtml {
+    background-color: silver;
+    /* width: auto; */
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+}
+
+#tablaPropiedadesCss {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14.5px;
+}
+
+#tablaPropiedadesHtml {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14.0px;
+}
+
+.inputValue {
+    width: 70px;
+    max-width: 70px;
+}
+
+/* ----------------------------------------------------- */
+#panelCanvas {
+    width: 82%;
+    /* height: 90vh; */
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+
+    /* justify-content: start; */
+    /* justify-items: start */
+    /* align-items: start; */
+    /* align-content: start; */
+    /* overflow: scroll; */
+}
+
+#canvas {
+    background-color: white;
+    /* display: inline-block; */
+    height: 95%;
+    width: auto;
+
+    border: lightgray 2px solid;
+    box-sizing: border-box;
+    margin: 15px 15px 0px 5px;
+    overflow: auto;
+
+    position: relative;
+
+}
+
+.Element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 4px 4px;
+
+
+    border-color: black;
+    border-width: "5px";
+    border-style: solid;
+}
+
+/* ----------------------------------------------------- */
+
+.seleccionMouseOver:hover {
+    /* border: grey 1px dashed; */
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/32/32454.png"); */
+ 
+
+    /* border: blue solid 1px; */
+    /* box-sizing: border-box; */
+
+    background-clip: border-box;
+
+
+    background-image:
+        /* Arriba */
+        url("./assets/images/system/dashedHnegro.png"),
+        /* Derecha */
+        url("./assets/images/system/dashedVnegro.png"),
+        /* Abajo */
+        url("./assets/images/system/dashedHnegro.png"),
+        /* Izquierda */
+        url("./assets/images/system/dashedVnegro.png");
+
+    background-size:
+        6px 1px,
+        1px 6px,
+        6px 1px,
+        1px 6px;
+    background-repeat:
+        repeat-x,
+        repeat-y,
+        repeat-x,
+        repeat-y;
+
+    background-position:
+        0px 0px,
+        100% 0px,
+        0px 100%,
+        0px 100%;
+        /* top center,
+        right center,
+        bottom center,
+        left center; */
+    
+}
+.seleccionMouseOverImgs:hover{
+    padding: 1px;
+}
+.seleccionarImgan{
+    padding: 2px;
+}
+.seleccionarImganDrop{
+    padding: 4px;
+}
+.seleccionarElemento {
+    /* border: red 1px dashed; */
+    /* background-color: rgba(234, 18, 18, 0.35); */
+
+
+    background-clip: border-box;
+
+
+    background-image:
+        /* Arriba */
+        url("./assets/images/system/dashedHrojo.png"),
+        /* Derecha */
+        url("./assets/images/system/dashedVrojo.png"),
+        /* Abajo */
+        url("./assets/images/system/dashedHrojo.png"),
+        /* Izquierda */
+        url("./assets/images/system/dashedVrojo.png");
+
+    background-size:
+        6px 2px,
+        2px 6px,
+        6px 2px,
+        2px 6px;
+    background-repeat:
+        repeat-x,
+        repeat-y,
+        repeat-x,
+        repeat-y;
+
+    background-position:
+        0px 0px,
+        100% 0px,
+        0px 100%,
+        0px 100%;
+
+}
+
+.seleccionarDrop {
+    background-clip: border-box;
+
+
+    background-image:
+        /* Arriba */
+        url("./assets/images/system/dashedHverde.png"),
+        /* Derecha */
+        url("./assets/images/system/dashedVverde.png"),
+        /* Abajo */
+        url("./assets/images/system/dashedHverde.png"),
+        /* Izquierda */
+        url("./assets/images/system/dashedVverde.png");
+
+    background-size:
+        6px 1px,
+        1px 6px,
+        6px 1px,
+        1px 6px;
+    background-repeat:
+        repeat-x,
+        repeat-y,
+        repeat-x,
+        repeat-y;
+
+    background-position:
+        0px 0px,
+        100% 0px,
+        0px 100%,
+        0px 100%;
+}
+.seleccionarDrop2 {
+    /* border: green 2px dashed; */
+    background-color: rgba(0, 128, 0, 0.368);
+
+
+
+    /* box-sizing: border-box; */
+    /* box-sizing: content-box; */
+}
+
+
+
+
+
+/* ========================== *** SAND BOX *** =================================== */
+
+#test {
+    width: 100px;
+    height: 100px;
+}
+
+.demo {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.demo:hover {
+    /* background-color: blue; */
+    border: black 1px dashed;
+}
+
+#bloque {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.frame {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    border-color: gray;
+    border-style: dashed;
+    border-width: 5px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.content {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* top: 5px;
+        left: 5px; */
+    z-index: 12;
+    /* margin: 5px 5px 5px 5px; */
+    /* margin-top: 5px; */
+    /* margin-top: 15px; */
+}
+
+.referencia {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    /* z-index: 22; */
+    visibility: hidden;
+}
+
+.frame {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-color: gray;
+    border-style: dashed;
+    border-width: 2px;
+    /* z-index: 22; */
+    visibility: hidden;
+}
+
+.contentBox {
+    background-color: lightseagreen;
+    width: 400px;
+    height: 400px;
+    /* z-index: 12; */
+}
+
+.referenciaH {
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    /* z-index: 22; */
+    visibility: hidden;
+}
+
+.frameH {
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-color: gray;
+    border-style: dashed;
+    border-width: 2px;
+    /* z-index: 22; */
+    visibility: hidden;
+}
+
+.contentBoxH {
+    background-color: lightseagreen;
+    width: 100%;
+    height: 20px;
+    /* z-index: 12; */
+}
+
+#frameX {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    /* visibility: hidden; */
+}
+
+#frame2 {
+    background-color: gray;
+    width: 205px;
+    height: 205px;
+    /* position: absolute; */
+
+}
+
+#content2 {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 200px;
+}
+
+#frame3 {
+    background-color: gray;
+    width: 205px;
+    height: 205px;
+    /* position: absolute; */
+
+}
+
+#content3 {
+    background-color: lightseagreen;
+    width: 200px;
+    height: 200px;
+}
+
+#test10{
+    height: auto;
+    width: auto;
+    min-height: 10px;
+    min-width :15px;
+}
+
+.test11{
+    height: auto;
+    width: auto;
+    min-height: 10px;
+    min-width :15px;
+}
+
+#bord2{
+    width: 300px;
+    height: 300px;
+
+    background-image: 
+    /* url("https://as1.ftcdn.net/v2/jpg/05/70/90/38/1000_F_570903845_fKaGmhzqQoMM1MjRp9cPAtDaDMcvru9j.jpg"), */
+    url("https://img.freepik.com/foto-gratis/superficie-metal-rayado-estilo-grunge-oscuro_1048-12951.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700611200&semt=ais"),
+    url("./assets/images/system/aritstaVerde.png");
+
+    background-position:
+    0% 0%,
+    right top;
+
+    background-size:  100% 100%,20px auto;
+    background-repeat: repeat, repeat-y;
+}
+#bord{
+    width: 350px;
+    height: 350px;
+
+    background-image: 
+    url("./assets/images/system/aritstaVerde.png"),
+    url("https://as1.ftcdn.net/v2/jpg/05/70/90/38/1000_F_570903845_fKaGmhzqQoMM1MjRp9cPAtDaDMcvru9j.jpg");
+    /* url("https://img.freepik.com/foto-gratis/superficie-metal-rayado-estilo-grunge-oscuro_1048-12951.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700611200&semt=ais"); */
+
+    /* background-position:
+    right top,
+    0% 0%;
+
+    background-repeat: repeat-y, repeat;
+    background-size: 20px auto, auto auto; */
+    background-position:
+    center center,
+    0% 0%;
+
+    background-repeat: no-repeat, repeat;
+    background-size: 60% 60%, auto auto;
+}
+
+#bordImg{
+    width: 350px;
+    height: 350px;
+
+    /* border-color: red;
+    border-width: 5px;
+    border-style: dashed; */
+    padding: 2px;
+
+    background-color: blue;
+
+   /*  background-image: 
+    url("./assets/images/system/aritstaVerde.png"),
+    url("https://as1.ftcdn.net/v2/jpg/05/70/90/38/1000_F_570903845_fKaGmhzqQoMM1MjRp9cPAtDaDMcvru9j.jpg");
+
+    background-position:
+    center center,
+    0% 0%;
+
+    background-repeat: no-repeat, repeat;
+    background-size: 60% 60%, auto auto; */
+}
+
+#pis{
+    width: 200px;
+    height: 200px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}

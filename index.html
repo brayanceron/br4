@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Br4</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+
+
+
+    <div id="universe">
+
+
+
+        <div class="elementos">
+
+            <!-- <h6 id="tituloBarraElementos">Elementos</h6> -->
+            <div class="panelElementos">
+                <p class="etiquetaGeneral">Basic Tags: </p>
+                
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="a">&lt;a&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="b">&lt;b&gt;</button>    
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="i">&lt;i&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="label">&lt;label&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="p">&lt;p&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="q">&lt;q&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="small">&lt;small&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="span">&lt;span&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="strong">&lt;strong&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="br">&lt;br&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="hr">&lt;hr&gt;</button>
+
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h1"">&lt;H1&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h2">&lt;H2&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h3">&lt;H3&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h4">&lt;H4&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h5">&lt;H5&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="h6">&lt;H6&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="img">&lt;img&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="ol">&lt;ol&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="ul">&lt;ul&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="li">&lt;li&gt;</button>
+                    
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="table">&lt;table&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="th">&lt;th&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="tr">&lt;tr&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="td">&lt;td&gt;</button>
+
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="article">&lt;article&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="aside">&lt;aside&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="div">&lt;div&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="footer">&lt;footer&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="main">&lt;main&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="nav">&lt;nav&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="section">&lt;section&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="menu">&lt;menu&gt;</button>
+
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="form">&lt;form&gt;</button>                
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="input">&lt;input&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="button">&lt;button&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="textarea">&lt;textarea&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="select">&lt;select&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="option">&lt;option&gt;</button>
+
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="audio">&lt;audio&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="video">&lt;video&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="source">&lt;source&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="fieldset">&lt;fieldset&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="legend">&lt;legend&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="iframe">&lt;iframe&gt;</button>                
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="progress">&lt;progress&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="details">&lt;details&gt;</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="summary">&lt;summary&gt;</button>
+
+                <!-- <audio src="./assets/audio/audio.mp3" controls></audio> -->
+            
+            </div>
+            <div class="panelElementos">
+                <p class="etiquetaGeneral">Composite Tags: </p>
+
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="checkbox">checkbox</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="color">color</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="date">date</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="datetime">datetime</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="datetime-local">datetime-l</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="email">email</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="file">file</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="hidden">hidden</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="image">image</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="month">month</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="number">number</button>
+                <!-- <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="checkbox">month</button> -->
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="password">password</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="radio">radio</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="range">range</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="reset">reset</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="search">search</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="submit">submit</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="tel">tel</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="text">text</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="time">time</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="week">week</button>
+
+                <!-- <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome01">cus1</button> -->
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome02">table</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome03">testimonial</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome04">form</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome05">rowlayout</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome06">gridlayout</button>
+                <button onclick="addElement(event)" class="btn" draggable="true" ondragstart="dragStartNewElement()" id="custome07">center</button>
+            </div>
+
+            <div class="panelElementos">
+                <p class="etiquetaGeneral">Options: </p>
+                <button onclick="generateCode(event)" class="btn" id="btnGenerate">generate</button>
+            </div>
+
+            
+            <div id="panelInformacion">
+                <p id="elemento_seleccionado">Selection: </p>
+                <p id="sepadaro_info"> || </p>
+                <p id="soltar_en"></p>
+            </div>
+        </div>
+
+
+        <div id="workArea">
+
+            <div class="panelCanvas" id="panelCanvas">
+                <div class="canvas" id="canvas" ondrop="dropElement()" ondragover="dragOverElement()">
+                </div>
+            </div>
+
+            <div class="panelPropiedades" id="panelPropiedades">
+                
+                <div class="propiedadesCss" id="propiedadesCss">
+                    <h3>Css Properties: </h3>
+                    <table id="tablaPropiedadesCss">
+                        <!-- <tbody id="bodyTablaPropiedadesCss">
+                        </tbody> -->
+                    </table>
+                </div>
+                
+                <div class="propiedadesHtml" id="propiedadesHtml">
+                    <h3>HTML Properties: </h3>
+                    <table id="tablaPropiedadesHtml">
+                        <!-- <tbody id="bodyTablaPropiedadesHtml">
+                        </tbody> -->
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+    
+
+
+    <!-- ============================== SAND BOX =================================== -->
+    
+  
+    <!-- -------------------------------- -->
+  <!--   <canvas id="pis"></canvas>
+    <address>fds</address>
+    <area shape="circle" coords="" href="" alt="">
+    <cite></cite>
+    <dialog></dialog>
+
+    <figure></figure>
+    <figcaption></figcaption>
+
+    <picture></picture>
+
+
+<param>
+<source>
+<title></title>
+<track>
+<u></u>
+<wbr> -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
